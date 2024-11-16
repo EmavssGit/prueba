@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Un Poco de Todo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Encabezado de la página -->
+    <h1>Un Poco de Todo</h1>
+
+    <!-- Navegación -->
+    <nav class="navegacion">
+        <ol><a href="teclados.html">Teclados</a></ol>
+        <ol><a href="parlantes.html">Parlantes</a></ol>
+        <ol><a href="ventiladores.html">Ventiladores</a></ol>
+        <ol><a href="espejos.html">Espejos</a></ol>
+        <ol><a href="carrito.html">Carrito</a></ol>
+    </nav>
+
+    <!-- Sección de Reloj y Fecha -->
+    <div class="clock">
+        <p id="date"></p>
+        <p id="time"></p>
+    </div>
+
+    <!-- Contenedor de Tarjetas de Producto -->
+    <section class="flex-card-container">
+        <article class="card">
+            <div class="overlay">
+                <h3>Teclado 1</h3>
+                <img src="img/teclado-1.jpg" alt="Imagen de Teclado">
+                <p>Descripción del Teclado</p>
+                <p>Precio: $100</p>
+                <button class="boton" onclick="agregarAlCarrito('Teclado 1', 100)">Agregar al Carrito</button>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="overlay">
+                <h3>Parlante 1</h3>
+                <img src="img/paralant.jpg" alt="Imagen de Parlante">
+                <p>Descripción del Parlante</p>
+                <p>Precio: $80</p>
+                <button class="boton" onclick="agregarAlCarrito('Parlante 1', 80)">Agregar al Carrito</button>
+            </div>
+        </article>
+
+        
+        <article class="card">
+            <div class="overlay">
+                <h3>Ventiladores</h3>
+                <img src="img/ventilador.jpg" alt="Imagen de Parlante">
+                <p>Descripción del Parlante</p>
+                <p>Precio: $80</p>
+                <button class="boton" onclick="agregarAlCarrito('Parlante 1', 80)">Agregar al Carrito</button>
+            </div>
+        </article>
+        <article class="card">
+            <div class="overlay">
+                <h3>Espejos</h3>
+                <img src="img/espejo.jpg" alt="Imagen de Parlante">
+                <p>Descripción del Parlante</p>
+                <p>Precio: $80</p>
+                <button class="boton" onclick="agregarAlCarrito('Parlante 1', 80)">Agregar al Carrito</button>
+            </div>
+        </article>
+
+        <!-- Otros productos similares -->
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

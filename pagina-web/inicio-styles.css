@@ -1,0 +1,62 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #101820;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    color: #FF69B4;
+    margin: 20px 0;
+    font-size: 2.5rem;
+}
+
+.product {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    padding: 20px 0;
+}
+
+.product.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.content {
+    display: inline-block;
+    width: 80%;
+    max-width: 500px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.content img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.content h2 {
+    color: #32CD32; /* Verde Bellota */
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.content p {
+    color: #1E90FF; /* Azul Burbuja */
+    font-size: 1rem;
+}
+
+.price {
+    font-size: 1.2rem;
+    color: #FF69B4; /* Rosa Bombón */
+    margin-top: 10px;
+    font-weight: bold;
+}
